@@ -1,0 +1,6 @@
+n1 = int(input("digite o primeiro valor "))
+n2 = int(input("digite o segundo valor "))
+print("A soma vale {}!".format(n1+n2))
+print("A subtração vale {}!".format(n1-n2))
+print("A multiplicação equivale a {}!".format(n1*n2))
+print("A divisão equivale a {}!".format(n1/n2))
