@@ -1,0 +1,12 @@
+n1 = int(input("digite um número"))
+print("x1 {} ".format(n1*1))
+print("x1 {} ".format(n1*2))
+print("x1 {} ".format(n1*3))
+print("x1 {} ".format(n1*4))
+print("x1 {} ".format(n1*5))
+print("x1 {} ".format(n1*6))
+print("x1 {} ".format(n1*7))
+print("x1 {} ".format(n1*8))
+print("x1 {} ".format(n1*9))
+print("x1 {} ".format(n1*10))
+
