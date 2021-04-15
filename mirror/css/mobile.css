@@ -1,0 +1,195 @@
+.container {
+    width: 96%;
+}
+
+header h1 img {
+    max-width: 50%;
+}
+
+.sacola {
+    display: none;
+}
+
+.menu-opcoes {
+    position: static;
+    text-align: center;
+}
+
+.menu-opcoes ul li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.busca,
+.menu-departamentos,
+.destaque img {
+    margin-right: 0;
+    width: 100%;
+}
+
+
+@media (max-width:320px) {
+    .container {
+        width: 96%;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    header h1 img {
+        max-width: 50%;
+    }
+
+    .sacola {
+        display: none;
+    }
+
+    .menu-opcoes {
+        position: static;
+        text-align: center;
+    }
+
+    .menu-opcoes ul li {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .busca,
+    .menu-departamentos,
+    .banner-destaque img,
+    .foto img {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .painel {
+        width: auto;
+    }
+
+    .painel li {
+        width: 30%;
+    }
+
+    .painel img {
+        width: 100%;
+    }
+}
+@media	(min-width:	630px)	{
+.produto	{
+	position:	relative;
+	padding-left: 40%;
+}
+
+.cores	{
+	position:	static;
+	padding: 0;
+}
+
+.cores legend	{
+	position:	static;
+}
+
+.cores label img	{
+	position:	absolute;
+	top: 0;
+	left: 0;
+}
+
+.cores label:after	{
+	position:	static;
+	float:	left;
+}
+
+.cores label img	{
+	max-width: 35%;
+	max-height: 100%;
+}
+
+.produto	{
+	font-size: 1.2em;
+}
+
+.cores label::after	{
+	margin-right: 10px;
+}
+
+fieldset	{
+	display:	inline-block;
+	vertical-align:	top;
+	margin: 1em 0;
+	min-width: 240px;
+	width: 45%;
+}
+
+}
+
+.tamanhos output {
+	display: inline-block;
+	height: 44px;
+	width: 44px;
+	line-height: 44px;
+	text-align: center;
+	border: 3px solid #666;
+	border-radius: 50%;
+	color: #555;
+}
+
+.detalhes {
+    padding: 2em 0;
+}
+
+.detalhes h2 {
+    font-size: 1.5em;
+    line-height: 2;
+}
+
+.detalhes p {
+    margin: 1em 0;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+@media (min-width: 320px) {
+.detalhes {
+    font-size: 1.2em;
+}
+
+}
+
+.detalhes table {
+    border-spacing: 0.2em;
+    border-collapse: separate;
+}
+
+.detalhes thead {
+    background-color: #999;
+}
+
+.detalhes thead th {
+    font-weight: bold;
+    padding: 0.3em 1em;
+    text-align: center;
+}
+
+.detalhes td {
+    padding: 0.3em;
+}
+
+.detalhes tr:nth-child(2n) {
+    background-color: #ccc;
+}
+
+.detalhes td:first-child {
+    font-style: italic;
+}
+
+.produto-back {
+    background-color: #f2f2f2;
+    margin-top: 1em;
+    border-top: 2px solid #ccc;
+}
+
+.cores label img {
+    border: 2px solid #ccc;
+}
