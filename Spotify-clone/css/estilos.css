@@ -1,0 +1,371 @@
+:root {
+	--default-green: #1db954;
+	--light-green: #1ed760;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: -10px;
+}
+
+body {
+	font-family: 'Nunito',sans-serif;
+	background: url('../imgs/capa.png'),
+				url('../imgs/ruido.png'),
+				linear-gradient(50deg, #ff4169, #7c26f8);
+	background-attachment: fixed;
+	font-family: arial, sans-serif;
+	overflow-x: hidden; 
+	
+	
+}
+
+
+.btn-two {
+	
+	background-color: transparent;
+	color: white;
+	text-transform: uppercase;
+	padding: 15px 60px;
+	border: none;
+	border-radius: 30px;
+	letter-spacing: 1px;
+	font-weight: Nunito;
+	font-size: 12px;
+}
+
+.btn-two{
+	border: 2px solid white;
+}
+.btn-two:hover {
+
+	background: white;
+	color: black;
+	cursor: pointer;
+}
+
+.btn-roxo{
+	background: #7c25f8;
+}
+.btn-roxo:hover
+{
+	background: #6207e3;
+	color: white;
+}
+
+.logo{
+	position:static;
+	height: 50px;
+	width: auto;
+	
+}
+
+
+#navbar {
+	display: flex;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: white;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+#navbar .navbar-container {
+	width: 60%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+#navbar .navbar-container.navbar-inverse{
+	background: transparent;
+}
+
+#navbar .navbar-container ul {
+	display: flex;
+	list-style: none;
+	font-weight: bold;
+}
+
+#navbar .navbar-container ul li {
+	padding: 0 20px;
+	transition: all 300ms ease;
+}
+
+#navbar .navbar-container ul li:hover {
+	color: #1db954;
+	cursor: pointer;
+}
+
+.divisor{
+	width: 0.6px;
+	height: 0.5px;
+	background: white;
+	margin:10px 10px;
+	transform: rotate(90deg)
+}
+
+
+#showcase {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+
+}
+
+#showcase .showcase-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#showcase .showcase-container h2 {
+	font-size: 130px;
+	
+}
+
+#showcase .showcase-container p {
+	margin: 15px 0;
+	font-size: 1.8rem;
+}
+
+#footer {
+	margin-top: 90px;
+	background: black;
+	color: white;
+	padding: 80px 0;
+	margin-bottom: 60px;
+}
+
+#footer .footer-content {
+	display: flex;
+	width: 60%;
+	margin: auto;
+	justify-content: space-between;
+}
+
+#footer .footer-content .footer-menu {
+	margin: 0 60px;
+	list-style: none;
+}
+
+#footer .footer-content .footer-menu .footer-menu-item {
+	margin: 25px 0;
+	transition: all 300ms ease;
+}
+
+#footer .footer-content .footer-menu .footer-menu-item:hover {
+	color: var(--default-green);
+	cursor: pointer;
+}
+
+#footer .footer-content .footer-menu p {
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #919496;
+	font-size: 2.4rem;
+}
+
+.socials {
+	display: flex;
+}
+
+.socials i {
+	margin: 0 20px;
+	font-size: 2.7rem;
+	transition: all 300ms ease;
+}
+
+.socials i:hover {
+	color: var(--default-green);
+	cursor: pointer;
+}
+
+
+.footer-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 60%;
+	margin: auto;
+	font-weight: bold;
+	color: #919496;
+	font-size: 1.75rem;
+	padding-top: 50px;
+}
+
+.footer-info .footer-info-items {
+	display: flex;
+	list-style: none;
+}
+
+.footer-info .footer-info-items .footer-info-item {
+	margin: 0 10px;
+	transition: all 300ms ease;
+}
+
+.footer-info .footer-info-items .footer-info-item:hover {
+	color: var(--default-green);
+	cursor: pointer;
+}
+
+#servicos
+{
+	background: white;
+	padding-top: 20px;
+	padding-bottom: 60px;
+	
+}
+
+.albuns
+{
+	padding: 10px 0px 10px 0px;
+}
+
+#recursos
+{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+}
+
+.rotacionar 
+{
+	transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	padding-left: 80px;
+}
+#servicos h2, #servicos h3 {
+    color: #7c25f8;
+}
+#servicos h2{
+	font-size: 50px;
+}
+#servicos h3{
+	font-size: 30px;
+}
+#recursos h3 {
+    color: #9bf0e1;
+	font-size: 30px;
+}
+#recursos h2 {
+    color: white;
+	font-size: 50px;
+	
+}
+#recursos p {
+    color: white;
+	font-size: 15px;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+	#navbar{
+		display: block;
+		float: none;
+		width: 100%;
+		
+		
+	}
+	#navbar .navbar-container.navbar-inverse{
+		overflow: hidden;
+	}
+	#navbar .navbar-toggle{
+		display: block;
+		margin-bottom: 40px;
+		padding: 20px 20px;
+		background: transparent;
+	}
+	#navbar .navbar-toggle:hover{
+		cursor: pointer;
+		background-color: #1db954;
+	}
+	#navbar .navbar-collapse{
+		display: block;
+		overflow: hidden;
+	}
+
+#showcase .showcase-container p{
+	justify-content: center;
+	word-break:inherit;
+	font-size: 15px;
+	display: block;
+	padding: 0px 15px;
+}
+#showcase .showcase-container h2 {
+	display: block;
+	justify-content: center;
+	font-size: 30px;
+	
+}
+
+	.btn-roxo,
+	.btn-two,
+	.btn-roxo:hover,
+	.btn-two:hover{
+		display: block;
+		justify-content: center;
+		
+	}
+	
+	#servicos{
+		display: block;
+		justify-content: center;
+		padding: 0px 2px;
+	}
+	.albuns{
+		display: flex;
+		justify-content: center;
+		padding: 8px 20px 20px 10px;
+		width: 120%;
+	}
+	#servicos h2{
+		font-size: 30px;
+		font-weight: bold;
+	}
+	#servicos h3{
+		font-size: 20px;
+		font-weight: bold;
+	}
+	#servicos p{
+		font-size: 15px;
+		font-weight: bold;
+	}
+	#recursos{
+		display: block;
+		justify-content: center;
+	}
+	#recursos h2{
+		font-size: 30px;
+		font-weight: bold;
+	}
+	#srecursos h3{
+		font-size: 20px;
+		font-weight: bold;
+	}
+	#recursos p{
+		font-size: 15px;
+		font-weight: bold;
+	}
+	.rotacionar{	
+		width: 100%;
+		display: flex;
+		height: 90px;
+		padding-top: 5%;
+	}
+	.logo{
+		display: flex;
+		size: 20px;
+	}
+	.footer-content{
+		position: absolute;
+		
+		
+	}
+  }
